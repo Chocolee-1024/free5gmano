@@ -1,5 +1,4 @@
-from django.conf.urls import url
-from django.urls import include
+from django.urls import path, include, re_path
 
 from moi.views import ObjectManagement, TopologyView, SubscriptionView, NotificationView
 from moi.routers import CustomReadOnlyRouter
@@ -19,6 +18,6 @@ router.register(r'ObjectManagement/NSS/topology', TopologyView,
                 basename='Topology')
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
-    url(r'^ObjectManagement/(?P<className>[\w+]+)/(?P<id>[\w\\*-]+)/$', moi_view),
+    path('', include(router.urls)),
+    re_path(r'^ObjectManagement/(?P<className>[\w+]+)/(?P<id>[\w\\*-]+)/$', moi_view),
 ]

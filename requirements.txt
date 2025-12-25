@@ -1,14 +1,14 @@
-PyYAML
+PyYAML==6.0
 # pprint
-jsonschema==3.0.2
-Django==2.2.8
-djangorestframework==3.10.1
-pytz==2019.1
-sqlparse==0.3.0
-requests==2.21.0
+jsonschema==4.20.0
+Django==4.2.8
+djangorestframework==3.14.0
+pytz==2024.1
+sqlparse==0.4.4
+requests==2.31.0
 # pymysql #for windows
-django-mysql
-mysqlclient
-django-cors-headers
-drf-yasg==1.17.0
+django-mysql==4.0.3
+mysqlclient==2.2.0
+django-cors-headers==4.3.1
+drf-yasg==1.21.7
 service-mapping-plugin-framework
